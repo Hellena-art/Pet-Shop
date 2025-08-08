@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        form {
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+        <h3 style="text-align: center;">Login</h3>
+        <input type="text" placeholder="Login" id="Login" required>
+        <input type="password" placeholder="Senha" id="Senha" required>
+        <input type="button" value="Entrar" onclick="logar(); return false">
+    </form>
+    <script>
+        function logar() {
+            var login = document.getElementById('Login').value;
+            var senha = document.getElementById('Senha').value;
+            if (login == "admin" && senha == "admin") {
+                alert('Sucesso');
+                location.href = "home.html";
+            } else {
+                alert('Usuário ou senha incorretos');
+            }
+        }
+    </script>
+</body>
+
+</html>
