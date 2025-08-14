@@ -1,74 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços Oferecidos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Shop — Serviços</title>
+  <style>
+    body{font-family:Arial, sans-serif;margin:0;background:#f5f5f5;color:#333}
+    header,main,footer{max-width:1000px;margin:auto;padding:10px}
+    header h1{margin:0}
+    nav ul{list-style:none;margin:10px 0;padding:0;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{display:block;background:#fff;border:1px solid #ddd;border-radius:5px;padding:6px 12px;color:#333;text-decoration:none}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{background:#fff;border:1px solid #ddd;border-radius:6px;padding:10px}
+    @media (max-width:820px){.grid{grid-template-columns:1fr}}
+    footer{background:#222;color:#fff;border-radius:6px;margin-top:20px}
+  </style>
 </head>
-
 <body>
-    <section id="Servicos Oferecidos">
-        <h1>Serviços Oferecidos</h1>
+  <header>
+    <h1>Pet Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Produtos.html">Produtos</a></li>
+        <li><a href="Servicos.html">Serviços</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div>
-            <h2>Banho e Tosa Especializados</h2>
-            <p>Higienização completa com shampoos e condicionadores específicos para cada tipo de pelagem e necessidade do pet.</p>
-            <ul>
-                <li>Opções de tosa na tesoura ou máquina.</li>
-                <li>Hidratação profunda e desembolo de pelos.</li>
-                <li>Secagem com temperatura controlada para evitar desconfortos.</li>
-            </ul>
-        </div>
+  <main>
+    <h2>Serviços Oferecidos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Banho e Tosa</h3>
+        <p>Higienização completa, tosa na tesoura ou máquina e cuidados com a pelagem.</p>
+      </div>
+      <div class="card">
+        <h3>Hotelzinho</h3>
+        <p>Ambiente seguro e monitorado, rotina de brincadeiras e descanso.</p>
+      </div>
+      <div class="card">
+        <h3>Consultas Veterinárias</h3>
+        <p>Atendimento preventivo, vacinação e orientações de bem-estar.</p>
+      </div>
+    </div>
+  </main>
 
-        <div>
-            <h2>Hotelzinho e Creche</h2>
-            <p>Ambiente climatizado e seguro, com monitores treinados para cuidar do seu pet enquanto você está ausente.
-            </p>
-            <ul>
-                <li>Supervisão durante todo o dia.</li>
-                <li>Rotina de alimentação e brincadeiras.</li>
-                <li>Espaços para descanso e socialização.</li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Consultas Veterinárias</h2>
-            <p>Atendimento clínico geral e especializado para garantir a saúde do seu pet.</p>
-            <ul>
-                <li>Check-up preventivo.</li>
-                <li>Vacinação.</li>
-                <li>Diagnóstico e tratamento de doenças.</li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Higiene Bucal</h2>
-            <p>Cuidados essenciais para manter dentes e gengivas saudáveis.</p>
-            <ul>
-                <li>Limpeza de tártaro.</li>
-                <li>Prevenção contra mau hálito e doenças periodontais.</li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Adestramento Comportamental</h2>
-            <p>Treinamento com reforço positivo para melhorar o comportamento do seu pet.</p>
-            <ul>
-                <li>Correção de hábitos indesejados.</li>
-                <li>Ensinar comandos básicos e avançados.</li>
-                <li>Socialização com outros animais.</li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Loja Física e Online</h2>
-            <p>Produtos selecionados para todas as necessidades do seu pet.</p>
-            <li>Ração premium e super premium.</li>
-            <li>Brinqueods, acessórios e itens de higiene.</li>
-            <li>Entrega rápida e segura na sua casa.</li>
-        </div>
-    </section>
+  <footer>
+    <h3>Contato</h3>
+    <p>E-mail: contato@petshop.com.br • Telefone: (17) 0000-0000</p>
+  </footer>
 </body>
-
 </html>

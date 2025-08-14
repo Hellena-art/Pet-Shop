@@ -1,100 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Shop — Produtos</title>
+  <style>
+    body{font-family:Arial, sans-serif;margin:0;background:#f5f5f5;color:#333}
+    header,main,footer{max-width:1000px;margin:auto;padding:10px}
+    header h1{margin:0}
+    nav ul{list-style:none;margin:10px 0;padding:0;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{display:block;background:#fff;border:1px solid #ddd;border-radius:5px;padding:6px 12px;color:#333;text-decoration:none}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{background:#fff;border:1px solid #ddd;border-radius:6px;padding:10px;text-align:center}
+    .card img{max-width:100%;height:auto;border-radius:4px}
+    .preco{color:#0a7a3c;font-weight:bold}
+    @media (max-width:820px){.grid{grid-template-columns:1fr}}
+    footer{background:#222;color:#fff;border-radius:6px;margin-top:20px}
+  </style>
 </head>
-
 <body>
-    <section id="Higiene Cuidados">
-        <h1>Higiene e Cuidados</h1>
+  <header>
+    <h1>Pet Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Produtos.html">Produtos</a></li>
+        <li><a href="Servicos.html">Serviços</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div>
-                <h3>Shampoo Hipoalergênico Ultra Hidratante Pet Fleur - PET001 - <u><em>R$39,90</em></u></h3>
-                <p>Fórmula enriquecida com aveia coloidal, óleo de jojoba e proteína de seda. Ideal para cães e gatos com pele seca e sensível. Hidrata profundamente, alivia coceiras e irritações, deixando a pelagem macia e brilhante. Livre de sulfatos, parabenos e corantes artificiais, sendo seguro para uso frequente.</p>
-            </div>
+  <main>
+    <h2>Produtos em Destaque</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="Condicionador.jpg" alt="Condicionador para pets">
+        <h3>Condicionador</h3>
+        <p>Desembaraça os pelos e dá maciez e brilho.</p>
+        <p class="preco">R$ 45,50</p>
+      </div>
+      <div class="card">
+        <img src="Hidratante.jpg" alt="Hidratante para patas de pets">
+        <h3>Hidratante de Patinhas</h3>
+        <p>Protege contra ressecamento e rachaduras nas patas.</p>
+        <p class="preco">R$ 28,90</p>
+      </div>
+      <div class="card">
+        <img src="Ração_cachorro.jpg" alt="Ração para cachorro">
+        <h3>Ração para Cães</h3>
+        <p>Fórmula balanceada para energia e vitalidade.</p>
+        <p class="preco">R$ 159,90</p>
+      </div>
+      <div class="card">
+        <img src="Ração_gato.jpg" alt="Ração para gato">
+        <h3>Ração para Gatos</h3>
+        <p>Rica em proteínas e vitaminas para saúde felina.</p>
+        <p class="preco">R$ 129,90</p>
+      </div>
+      <div class="card">
+        <img src="bebedouro-comedouro-automatico.jpg" alt="Comedouro e bebedouro automático">
+        <h3>Comedouro e Bebedouro Automático</h3>
+        <p>Água e ração sempre disponíveis com praticidade.</p>
+        <p class="preco">R$ 189,90</p>
+      </div>
+      <div class="card">
+        <img src="Bolinha.jpg" alt="Bola interativa para cães">
+        <h3>Bola Interativa</h3>
+        <p>Estimula a atividade física e mental do pet.</p>
+        <p class="preco">R$ 22,90</p>
+      </div>
+      <div class="card">
+        <img src="Brinquedo_Gato.jpg" alt="Brinquedo para gatos">
+        <h3>Brinquedo para Gatos</h3>
+        <p>Ajuda a gastar energia e reduzir o estresse.</p>
+        <p class="preco">R$ 45,00</p>
+      </div>
+      <div class="card">
+        <img src="Cama.jpg" alt="Cama para pets">
+        <h3>Cama Confort</h3>
+        <p>Conforto para noites tranquilas em vários tamanhos.</p>
+        <p class="preco">R$ 99,90</p>
+      </div>
+      <div class="card">
+        <img src="Casa_gato.jpg" alt="Casa para gatos">
+        <h3>Casa para Gato</h3>
+        <p>Espaço para descanso com área de arranhador.</p>
+        <p class="preco">R$ 299,90</p>
+      </div>
+      <div class="card">
+        <img src="Coleira.jpg" alt="Coleira com identificação">
+        <h3>Coleira com Identificação</h3>
+        <p>Segurança nos passeios com plaquinha personalizada.</p>
+        <p class="preco">R$ 49,90</p>
+      </div>
+    </div>
+  </main>
 
-            <div>
-                <h3>Condicionador Desembaraçador Granado - PET002 - <u><em>R$45,50</em></u></h3>
-                <p>Desenvolvido para facilitar o pentear e reduzir a quebra dos fios, evitando nós e emaranhados. Sua fórmula com manteiga de karité e vitamina E hidrata, nutre e dá brilho à pelagem. Ideal para raças de pelo longo e para uso após o banho.</p>
-            </div>
-
-            <div>
-                <h3>Perfume Pet Clean (Macho, Fêmea, Filhote) - PET003 - <u><em>R$25,00</em></u></h3>
-                <p>Fragrâncias suaves e específicas para cada perfil: aroma fresco para machos, floral delicado para fêmeas e fragrância suave para filhotes. Ajuda a manter o pet cheiroso por mais tempo, sem agredir o olfato sensível dos animais.</p>
-            </div>
-
-            <div>
-                <h3>Hidratante de Patinhas Pet Clean - PET004 - <u><em></em>R$28,90</u></h3>
-                <p>Contém manteiga de cupuaçu, óleo de coco e cera de abelha, criando uma barreira protetora contra o ressecamento. Ideal para cães que caminham em calçadas quentes, superfícies ásperas ou pisos escorregadios. Uso seguro para cães e gatos.</p>
-            </div>
-                  
-    </section>
-    <br>
-    <br>
-        <section id="Produtos Alimentacao">
-            <h1>Produtos de Alimentação</h1>
-
-            <div>
-                <h3>Ração Golden Senior - Frango e Arroz - PET005 - <u><em>R$159,90</em></u></h3>
-                <p>Ração premium desenvolvida para cães idosos, com frango e arroz. Rica em nutrientes para manter a saúde e vitalidade.</p>
-            </div>
-            
-            <div>
-                <h3>Ração Special Cat Ultralife - Filhotes Salmão - PET006 - <u><em>R$129,90</em></u></h3>
-                <p>Ração super premium para gatos filhotes, com salmão, rico em ômega 3 e 6, promovendo crescimento saudável.</p>
-            </div>
-
-            <div>
-                <h3>Bifinhos Quatree Snacks - Sabor Carne - PET007 - <u><em>9,90</em></u></h3>
-                <p>Petisco super premium com 80% de proteína, prebióticos e colágeno. Ideal para recompensar seu pet.</p>
-            </div>
-        </section>
-        <br>
-        <br>
-        <section id="Brinquedos">
-             <h1>Brinquedos</h1>
-
-        <div>
-            <h3>Bola Interativa Porta-Petiscos - PET008 - <u><em>R$22,90</em></u></h3>
-            <p>Bola feita em material atóxico e resistente, com aberturas para inserir ração ou petiscos. Estimula o pet física e mentalmente, ajudando a controlar a ansiedade e prevenindo o tédio. Ideal para cães de todos os portes. Também auxilia na limpeza dos dentes enquanto o pet mastiga.</p>
-        </div>
-
-        <div>
-            <h3>Brinquedo Interativo para Gatos - Torre com Bolas - PET009 - <u><em>R$45,00</em></u></h3>
-            <p>Brinquedo que estimula o instinto de caça e mantém o gato ativo e entretido.</p>
-        </div>
-
-        <div>
-            <h3>Arranhador Torre com Plataformas - PET010 - <u><em>R$299,90</em></u></h3>
-            <p>Estrutura com diferentes níveis, plataformas e nichos para descanso e diversão de gatos.</p>
-        </div>
-        </section>
-        <br>
-        <br>
-        <section id="Acessorios">
-             <h1>Acessórios</h1>
-
-        <div>
-            <h3>Coleira de Couro com Placa de Identificação - PET011 - <u><em>R$49,90</em></u></h3>
-            <p>Coleira resistente e elegante, com placa personalizada para a segurança do seu pet.</p>
-        </div>
-
-        <div>
-            <h3>Cama para Pets - Vários Tamanhos - PET012 - <u><em>R$99,90</em></u></h3>
-            <p>Camas confortáveis disponíveis em diferentes tamanhos, ideais para cães e gatos de todos os portes.</p>
-        </div>
-
-        <div>
-            <h3>Comedouro e Bebedouro Automático - PET013 - <u><em>R$189,90</em></u></h3>
-            <p>Sistema inteligente para manter água e ração sempre disponíveis para o pet.</p>
-        </div>
-        </section>
-
-
-
+  <footer>
+    <h3>Contato</h3>
+    <p>E-mail: contato@petshop.com.br • Telefone: (17) 0000-0000</p>
+  </footer>
 </body>
-
 </html>
