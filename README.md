@@ -27,6 +27,3 @@ A ideia é manter tudo em um só lugar para facilitar o acesso e a atualização
 - Hellena Candida de Oliveira Sempionato
 - Maria Clara Franklin Ortale
 - Eduardo de Oliveira Sarri
-
-- Gustavo-HA  
-- [Adicionar nomes dos demais participantes]
