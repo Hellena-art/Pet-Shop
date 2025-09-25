@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Shop — Serviços</title>
+  <style>
+    body{font-family:Arial, sans-serif;margin:0;background:#f5f5f5;color:#333}
+    header,main,footer{max-width:1000px;margin:auto;padding:10px}
+    header h1{margin:0}
+    nav ul{list-style:none;margin:10px 0;padding:0;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{display:block;background:#fff;border:1px solid #ddd;border-radius:5px;padding:6px 12px;color:#333;text-decoration:none}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{background:#fff;border:1px solid #ddd;border-radius:6px;padding:10px}
+    @media (max-width:820px){.grid{grid-template-columns:1fr}}
+    footer{background:#222;color:#fff;border-radius:6px;margin-top:20px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pet Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Serviços Oferecidos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Banho e Tosa</h3>
+        <p>Higienização completa, tosa na tesoura ou máquina e cuidados com a pelagem.</p>
+      </div>
+      <div class="card">
+        <h3>Hotelzinho</h3>
+        <p>Ambiente seguro e monitorado, rotina de brincadeiras e descanso.</p>
+      </div>
+      <div class="card">
+        <h3>Consultas Veterinárias</h3>
+        <p>Atendimento preventivo, vacinação e orientações de bem-estar.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <h3>Contato</h3>
+    <p>E-mail: contato@petshop.com.br • Telefone: (17) 0000-0000</p>
+  </footer>
+</body>
+</html>
